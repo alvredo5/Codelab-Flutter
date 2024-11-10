@@ -8,23 +8,26 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('First Screen'),
-      ),
-      body: Center(
-        child: ElevatedButton(child: const Text('Pindah Screen', style: TextStyle(color: Colors.white),),
-          style: ElevatedButton.styleFrom(primary: Colors.blue),
-          onPressed: (){
-          // Navigator.push(context, MaterialPageRoute(builder: (context) {
-          //   return const SecondScreen();
-          // }));
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => SecondScreen(message)));
-          },
+        appBar: AppBar(
+          title: const Text('First Screen'),
         ),
-      )
-    );
+        body: Center(
+          child: ElevatedButton(
+            child: const Text(
+              'Pindah Screen',
+              style: TextStyle(color: Colors.white),
+            ),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+            onPressed: () {
+              // Navigator.push(context, MaterialPageRoute(builder: (context) {
+              //   return const SecondScreen();
+              // }));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => SecondScreen(message)));
+            },
+          ),
+        ));
   }
 }
-
-

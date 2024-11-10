@@ -22,6 +22,7 @@ import 'package:flutterbasic/textfield_screen.dart';
 void main() {
   runApp(const MyApp());
 }
+
 //class MyApp mengextends ( turunan ) StatelessWidget
 //sehingga MyApp akan memiliki sifat sifat yang dimiliki
 //oleh StatelessWidget
@@ -51,8 +52,8 @@ class MyApp extends StatelessWidget {
       //initialroute merupakan rute awal yang ditampilkan ketika aplikasi pertama kali dijalankan
       //ketika menggunakan initialroute dan route maka Kita tidak perlu menggunakan // home: RowSreen(), lagi.
       //karena semua route awal yang tampilan akan mengikuti initialRoute dan routes
-      //contoh dibawah ini yang akan ditampilkan adalah CustomScrollViewScreen().
-      initialRoute: '/login_screen',
+      //contoh dibawah ini yang akan ditampilkan adalah listview().
+      initialRoute: '/listview',
       //daftar rute atau halaman yang digunakan dalam aplikasi, yang dapat diakses
       //melalui tombol navigasi, hyperlink, dll
       routes: {
